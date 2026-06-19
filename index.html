@@ -1,193 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Quranic Flow Hub</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:#07130e;color:#fff}
-nav{
-position:fixed;
-width:100%;
-top:0;
-padding:20px;
-display:flex;
-justify-content:space-between;
-background:rgba(0,0,0,.6);
-backdrop-filter:blur(10px);
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#0b1d16;
+color:white;
 }
-nav a{
-color:#d4af37;
-text-decoration:none;
-margin-left:20px;
-}
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
+
+header{
+background:#123524;
+padding:60px 20px;
 text-align:center;
-padding:20px;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),
-url('https://images.unsplash.com/photo-1519817650390-64a93db51149?q=80&w=1600');
-background-size:cover;
-background-position:center;
 }
-.hero h1{
-font-size:4rem;
-color:#d4af37;
+
+header h1{
+color:gold;
+font-size:40px;
 }
-.hero p{
-max-width:700px;
-margin-top:20px;
-}
-.btn{
-margin-top:20px;
-padding:14px 30px;
-background:#d4af37;
-color:#000;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
-}
+
 section{
-padding:80px 20px;
-max-width:1200px;
-margin:auto;
+padding:20px;
 }
-.title{
-text-align:center;
-color:#d4af37;
-margin-bottom:40px;
-}
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
-}
+
 .card{
-background:#102118;
-padding:25px;
-border-radius:15px;
-border:1px solid #d4af37;
+background:#173d2d;
+padding:20px;
+margin:15px 0;
+border-radius:12px;
+border:1px solid gold;
 }
+
+h2{
+color:gold;
+}
+
+a{
+color:gold;
+text-decoration:none;
+}
+
 footer{
-background:#050d09;
-padding:30px;
+background:#08130f;
+padding:20px;
 text-align:center;
+margin-top:20px;
 }
 </style>
-</head>
 
+</head>
 <body>
 
-<nav>
-<div><b>Quranic Flow</b></div>
-<div>
-<a href="#ayah">Ayah</a>
-<a href="#hadith">Hadith</a>
-<a href="#dua">Dua</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
-
-<section class="hero">
+<header>
 <h1>Quranic Flow Hub</h1>
-<p>Connecting Hearts With The Quran & Sunnah</p>
-<a href="https://instagram.com/Quranic._.flow" class="btn">Follow Instagram</a>
-</section>
-
-<section id="ayah">
-<h2 class="title">Daily Quran Ayah</h2>
-<div class="card">
-<h3>Surah Ar-Ra'd 13:28</h3>
-<p>Indeed, in the remembrance of Allah do hearts find rest.</p>
-</div>
-</section>
-
-<section id="hadith">
-<h2 class="title">50 Hadith Collection</h2>
-
-<div class="grid">
-
-<div class="card"><h3>1</h3><p>Actions are judged by intentions.</p></div>
-
-<div class="card"><h3>2</h3><p>The best among you are those who learn the Quran and teach it.</p></div>
-
-<div class="card"><h3>3</h3><p>A smile is charity.</p></div>
-
-<div class="card"><h3>4</h3><p>Cleanliness is half of faith.</p></div>
-
-<div class="card"><h3>5</h3><p>The strong person is the one who controls anger.</p></div>
-
-<div class="card"><h3>6</h3><p>Speak good or remain silent.</p></div>
-
-<div class="card"><h3>7</h3><p>Allah loves kindness in all matters.</p></div>
-
-<div class="card"><h3>8</h3><p>The believer does not insult others.</p></div>
-
-<div class="card"><h3>9</h3><p>Seeking knowledge is obligatory upon every Muslim.</p></div>
-
-<div class="card"><h3>10</h3><p>The most beloved deeds to Allah are those done consistently.</p></div>
-
-<div class="card"><h3>11</h3><p>Make things easy and do not make them difficult.</p></div>
-
-<div class="card"><h3>12</h3><p>Modesty is part of faith.</p></div>
-
-<div class="card"><h3>13</h3><p>Love for your brother what you love for yourself.</p></div>
-
-<div class="card"><h3>14</h3><p>The best charity is giving water.</p></div>
-
-<div class="card"><h3>15</h3><p>The merciful are shown mercy by Allah.</p></div>
-
-<div class="card"><h3>16</h3><p>Whoever does not thank people has not thanked Allah.</p></div>
-
-<div class="card"><h3>17</h3><p>Truth leads to righteousness.</p></div>
-
-<div class="card"><h3>18</h3><p>Paradise lies at the feet of the mother.</p></div>
-
-<div class="card"><h3>19</h3><p>The best people are those most beneficial to others.</p></div>
-
-<div class="card"><h3>20</h3><p>Remember Allah and He will remember you.</p></div>
-
-</div>
-</section>
-
-<section id="dua">
-<h2 class="title">Daily Dua</h2>
-<div class="card">
-<p>رَّبِّ زِدْنِي عِلْمًا</p>
-<p>My Lord, increase me in knowledge.</p>
-</div>
-</section>
+<p>Connecting Hearts With The Quran</p>
+<a href="https://instagram.com/Quranic._.flow">
+Follow @Quranic._.flow
+</a>
+</header>
 
 <section>
-<h2 class="title">Features</h2>
-<div class="grid">
-<div class="card">Prayer Times</div>
-<div class="card">Islamic Calendar</div>
-<div class="card">Daily Reflections</div>
-<div class="card">Quran Learning</div>
-<div class="card">Dua Collection</div>
-<div class="card">Islamic Articles</div>
-</div>
-</section>
 
-<section id="contact">
-<h2 class="title">Contact</h2>
+<h2>📖 Daily Quran Ayah</h2>
+
 <div class="card">
-<p>Instagram: @Quranic._.flow</p>
+Indeed, in the remembrance of Allah do hearts find rest.
+(Surah Ar-Ra'd 13:28)
 </div>
+
+<h2>📚 Hadith Collection</h2>
+
+<div class="card">
+Actions are judged by intentions.
+</div>
+
+<div class="card">
+The best among you are those who learn the Quran and teach it.
+</div>
+
+<div class="card">
+A smile is charity.
+</div>
+
+<div class="card">
+Cleanliness is half of faith.
+</div>
+
+<div class="card">
+Speak good or remain silent.
+</div>
+
+<h2>🤲 Daily Duas</h2>
+
+<div class="card">
+رَّبِّ زِدْنِي عِلْمًا<br>
+My Lord, increase me in knowledge.
+</div>
+
+<div class="card">
+حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ<br>
+Allah is sufficient for us.
+</div>
+
+<div class="card">
+أَسْتَغْفِرُ اللَّهَ<br>
+I seek forgiveness from Allah.
+</div>
+
+<h2>🌙 About Quranic Flow</h2>
+
+<div class="card">
+Quranic Flow Hub is dedicated to spreading Quranic wisdom, Islamic reminders, Hadith and Duas.
+</div>
+
 </section>
 
 <footer>
-© Quranic Flow Hub 2026
+© Quranic Flow Hub
 </footer>
 
 </body>
-  </html>
+</html>
