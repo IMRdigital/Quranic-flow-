@@ -1,126 +1,248 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Quranic Flow Hub</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body{
+*{
 margin:0;
-font-family:Arial,sans-serif;
-background:#0b1d16;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#07130e;
 color:white;
 }
 
-header{
-background:#123524;
-padding:60px 20px;
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.7);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#d4af37;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:15px;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
 text-align:center;
-}
-
-header h1{
-color:gold;
-font-size:40px;
-}
-
-section{
 padding:20px;
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
+url('https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=1600');
+background-size:cover;
+background-position:center;
+}
+
+.hero-content h1{
+font-size:60px;
+color:#d4af37;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:18px;
+max-width:700px;
+margin:auto;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 32px;
+background:#d4af37;
+color:black;
+font-weight:600;
+text-decoration:none;
+border-radius:40px;
+}
+
+.section{
+padding:100px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:38px;
+margin-bottom:50px;
+color:#d4af37;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
 .card{
-background:#173d2d;
-padding:20px;
-margin:15px 0;
-border-radius:12px;
-border:1px solid gold;
+background:#102118;
+padding:25px;
+border-radius:18px;
+border:1px solid #d4af37;
+transition:.3s;
 }
 
-h2{
-color:gold;
+.card:hover{
+transform:translateY(-8px);
 }
 
-a{
-color:gold;
+.card h3{
+color:#d4af37;
+margin-bottom:10px;
+}
+
+.about{
+text-align:center;
+max-width:900px;
+margin:auto;
+line-height:1.9;
+}
+
+.instagram{
+text-align:center;
+}
+
+.instagram a{
+color:#d4af37;
+font-size:20px;
 text-decoration:none;
 }
 
 footer{
-background:#08130f;
-padding:20px;
+background:#050d09;
+padding:25px;
 text-align:center;
-margin-top:20px;
+margin-top:50px;
 }
 </style>
-
 </head>
+
 <body>
 
-<header>
+<nav>
+<div class="logo">Quranic Flow</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="hadith.html">Hadith</a></li>
+<li><a href="duas.html">Duas</a></li>
+<li><a href="prayer.html">Prayer</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<div class="hero-content">
+
 <h1>Quranic Flow Hub</h1>
-<p>Connecting Hearts With The Quran</p>
-<a href="https://instagram.com/Quranic._.flow">
-Follow @Quranic._.flow
+
+<p>
+Connecting Hearts With The Quran & Sunnah.
+Daily Islamic reminders, Quran verses,
+Hadith, Duas and inspiration for every Muslim.
+</p>
+
+<a href="https://instagram.com/Quranic._.flow" class="btn">
+Follow Instagram
 </a>
-</header>
 
-<section>
-
-<h2>📖 Daily Quran Ayah</h2>
-
-<div class="card">
-Indeed, in the remembrance of Allah do hearts find rest.
-(Surah Ar-Ra'd 13:28)
 </div>
+</section>
 
-<h2>📚 Hadith Collection</h2>
+<section class="section">
+
+<h2 class="section-title">Explore</h2>
+
+<div class="cards">
 
 <div class="card">
-Actions are judged by intentions.
-</div>
-
-<div class="card">
-The best among you are those who learn the Quran and teach it.
+<h3>📖 Daily Quran Ayah</h3>
+<p>Read and reflect on Quranic verses.</p>
 </div>
 
 <div class="card">
-A smile is charity.
+<h3>📚 Hadith Collection</h3>
+<p>Authentic Hadith from Prophet ﷺ.</p>
 </div>
 
 <div class="card">
-Cleanliness is half of faith.
+<h3>🤲 Daily Duas</h3>
+<p>Important duas for daily life.</p>
 </div>
 
 <div class="card">
-Speak good or remain silent.
+<h3>🕌 Prayer Times</h3>
+<p>Stay connected with Salah.</p>
 </div>
 
-<h2>🤲 Daily Duas</h2>
-
-<div class="card">
-رَّبِّ زِدْنِي عِلْمًا<br>
-My Lord, increase me in knowledge.
-</div>
-
-<div class="card">
-حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ<br>
-Allah is sufficient for us.
-</div>
-
-<div class="card">
-أَسْتَغْفِرُ اللَّهَ<br>
-I seek forgiveness from Allah.
-</div>
-
-<h2>🌙 About Quranic Flow</h2>
-
-<div class="card">
-Quranic Flow Hub is dedicated to spreading Quranic wisdom, Islamic reminders, Hadith and Duas.
 </div>
 
 </section>
 
+<section class="section">
+
+<h2 class="section-title">About Quranic Flow</h2>
+
+<div class="about">
+
+Quranic Flow Hub is dedicated to spreading
+Islamic knowledge through Quran,
+Hadith, Duas and beneficial reminders.
+Our mission is to help Muslims strengthen
+their connection with Allah and live by
+the teachings of Islam.
+
+</div>
+
+</section>
+
+<section class="section instagram">
+
+<h2 class="section-title">Instagram</h2>
+
+<a href="https://instagram.com/Quranic._.flow">
+@Quranic._.flow
+</a>
+
+</section>
+
 <footer>
-© Quranic Flow Hub
+
+© 2026 Quranic Flow Hub | All Rights Reserved
+
 </footer>
 
 </body>
