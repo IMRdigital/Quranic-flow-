@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quranic Flow - Tasbeeh Counter</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#0f172a;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    text-align:center;
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    width:350px;
+    box-shadow:0 0 20px rgba(0,255,170,0.3);
+}
+
+h1{
+    color:#00ffae;
+}
+
+.counter{
+    font-size:70px;
+    margin:20px 0;
+    font-weight:bold;
+}
+
+.zikr{
+    font-size:24px;
+    color:#ffd700;
+    margin-bottom:20px;
+}
+
+button{
+    padding:12px 25px;
+    margin:8px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.add{
+    background:#00ffae;
+    color:black;
+}
+
+.reset{
+    background:#ff4d4d;
+    color:white;
+}
+
+.change{
+    background:#ffd700;
+    color:black;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🤲 Tasbeeh Counter</h1>
+
+    <div class="zikr" id="zikr">SubhanAllah</div>
+
+    <div class="counter" id="count">0</div>
+
+    <button class="add" onclick="increment()">+ Count</button>
+    <button class="reset" onclick="resetCount()">Reset</button>
+    <br>
+    <button class="change" onclick="changeZikr()">Change Zikr</button>
+</div>
+
+<script>
+let count = 0;
+let zikrs = [
+    "SubhanAllah",
+    "Alhamdulillah",
+    "Allahu Akbar",
+    "La ilaha illallah",
+    "Astaghfirullah"
+];
+
+let current = 0;
+
+function increment(){
+    count++;
+    document.getElementById("count").innerText = count;
+}
+
+function resetCount(){
+    count = 0;
+    document.getElementById("count").innerText = count;
+}
+
+function changeZikr(){
+    current++;
+    if(current >= zikrs.length){
+        current = 0;
+    }
+    document.getElementById("zikr").innerText = zikrs[current];
+}
+</script>
+
+</body>
+</html>
